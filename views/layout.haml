@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %title= @title || "Portfolio"
+    %link{:href => "/stylesheets/portfolio.css", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/entry.css", :rel => "stylesheet"}/
+  %body
+    #tags reserved for tags
+    = haml :'entry/list'
+    #footer
+      %small Copyright Mark Poon 2012

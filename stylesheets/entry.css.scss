@@ -1,0 +1,22 @@
+#entry {
+  float:left;
+  position:relative;
+  .caption {
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    background-color:black;
+    font-family: 'helvetica';
+    font-size: 10;
+    color: white;
+    opacity:0.75;
+    filter:alpha(opacity=75);
+    h2 { padding:0px 10px 8px 10px; margin: 0px;}
+    h3 { padding:0px 10px 10px 10px; margin: 0px;}
+    }
+  .capcon { padding:5px; margin: 0px }
+  .more {
+    text-align: right; 
+    padding:0px 10px 10px 10px; margin: 0px;}
+  }

@@ -1,0 +1,12 @@
+- @entries.each do |entry|
+  #entry
+    =link_to image_tag(entry.imageurl), entry
+    .caption  
+      %p{class: "capcon"}
+        %h2=entry.title
+        %h3=entry.description
+        .more
+          -if entry.videourl
+            =entry.videourl
+          %br  
+          =entry.created

@@ -1,0 +1,36 @@
+%h1 #{title}
+%fieldset
+  %p Create a new Entry
+  %form(action="/new" method="post")
+    %ul
+      %li
+        %label(for= "title") Title
+        %br
+        %input(type= "text" name= "entry[title]")
+      %li
+        %label(for= "description") Description
+        %br
+        %textarea(name = "entry[Description]")
+      %li
+        %label(for= "imageurl") Image Link
+        %br
+        %input(type= "text" name ="entry[imageurl]")
+      %li
+        %label(for= "videourl") Video Link
+        %br
+        %input(type= "text" name ="entry[videourl]")
+      %li
+        %label(for= "filedownload") File Link
+        %br
+        %input(type= "text" name ="entry[filedownload]")
+      %li
+        %label(for= "tag") Tags
+        %br
+        %input(type= "text" name ="entry[tag]")
+      %li
+        %label(for= "made") Date Created
+        %br
+        %input(type= "text" name ="entry[made]")      
+    %input(type= "submit" value= "Save" class= "button")
+    &nbsp;
+    %a(href="/") Back
