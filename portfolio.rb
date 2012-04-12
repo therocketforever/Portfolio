@@ -20,6 +20,16 @@ class Entry
   field :made, type: String
 end
 
+helpers do
+  
+  def link_to(url,text=url,opts={})
+    attributes = ""
+    opts.each { |key,value| attributes << key.to_s << "=\"" << value << "\" "}
+    "<a href=\"#{url}\" #{attributes}>#{text}</a>"
+  end
+
+end
+
 get '/' do  
   @entries = Entry.all
   haml :layout
